@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bxs-check-circle icon'></i>
+            <a style="text-decoration: none;" href="./index.html">
+                <div class="logo_name">Evm One</div>
+            </a>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <a href="./company.html">
+                    <i class='bx bxs-buildings'></i>
+                    <span class="links_name">Company</span>
+                </a>
+                <span class="tooltip">Company</span>
+            </li>
+            <li>
+                <a href="./lead.html">
+                    <i class='bx bxs-group'></i>
+                    <span class="links_name">Lead</span>
+                </a>
+                <span class="tooltip">Lead</span>
+            </li>
+            <li>
+                <a href="./inventory.html">
+                    <i class='bx bxs-file'></i>
+                    <span class="links_name">Inventory</span>
+                </a>
+                <span class="tooltip">Inventory</span>
+            </li>
+            <li>
+                <a href="./payment.html">
+                    <i class='bx bxs-dollar-circle'></i>
+                    <span class="links_name">Payment</span>
+                </a>
+                <span class="tooltip">Payment</span>
+            </li>
+            <li>
+                <a href="./loan.html">
+                    <i class='bx bxs-bank'></i>
+                    <span class="links_name">Loan</span>
+                </a>
+                <span class="tooltip">Loan</span>
+            </li>
+            <li>
+                <a href="./discount.html">
+                    <i class='bx bxs-discount'></i>
+                    <span class="links_name">Discount</span>
+                </a>
+                <span class="tooltip">Discount</span>
+            </li>
+            <li>
+                <a href="./obflevel1.html">
+                    <i class='bx bxs-note'></i>
+                    <span class="links_name">OBF Level-1</span>
+                </a>
+                <span class="tooltip">OBF Level-1</span>
+            </li>
+            <li>
+                <a href="./obflevel2.html">
+                    <i class='bx bxs-note'></i>
+                    <span class="links_name">OBF Level-2</span>
+                </a>
+                <span class="tooltip">OBF Level-2</span>
+            </li>
+            <li>
+                <a href="./retailsales.html">
+                    <i class='bx bxs-buildings'></i>
+                    <span class="links_name">Retail Sales</span>
+                </a>
+                <span class="tooltip">Retail Sales</span>
+            </li>
+            <li>
+                <a href="./registration.html">
+                    <i class='bx bxs-buildings'></i>
+                    <span class="links_name">Registration Confirm</span>
+                </a>
+                <span class="tooltip">Registration Confirm</span>
+            </li>
+            <li>
+                <a href="./documentupload.html">
+                    <i class='bx bxs-report'></i>
+                    <span class="links_name">Document Upload</span>
+                </a>
+                <span class="tooltip">Document Upload</span>
+            </li>
+            <li>
+                <a href="./documentapproval.html">
+                    <i class='bx bxs-report'></i>
+                    <span class="links_name">Document Approval</span>
+                </a>
+                <span class="tooltip">Document Approval</span>
+            </li>
+            <li>
+                <a href="./allocation.html">
+                    <i class='bx bxs-report'></i>
+                    <span class="links_name">Allocation</span>
+                </a>
+                <span class="tooltip">Allocation</span>
+            </li>
+            <li>
+                <a href="./settlement.html">
+                    <i class='bx bxs-report'></i>
+                    <span class="links_name">Settlement of Accounts</span>
+                </a>
+                <span class="tooltip">Settlement</span>
+            </li>
+            <li>
+                <a href="./cancellation.html">
+                    <i class='bx bxs-error'></i>
+                    <span class="links_name">Cancellation</span>
+                </a>
+                <span class="tooltip">Cancellation</span>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <div class="navigation">
+            <div class="nav-1">
+                <div class="search">
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <p id="openModal">Search</p>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <input type="text"
+                            style="border: 1px solid #d7dbe6; padding: 5px; outline: none; font-size: 14px;"
+                            placeholder="Search...">
+                    </div>
+
+                </div>
+            </div>
+            <div class="profile">
+                <i class='bx bx-bell'></i>
+                <img src="./images/portrait-white-man-isolated.jpg" alt="">
+            </div>
+        </div>
+        <div class="payment">
+            <div class="pay">
+                <div class="pay-1">
+                    <h1>Payment</h1>
+                </div>
+                <div class="pay-2"><a href="./addpayment.html"><button>Add New</button></a></div>
+            </div>
+            <div id="payGrid" class="ag-theme-quartz" style="height: 650px"></div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bxs-check-circle icon'></i>
+            <a style="text-decoration: none;" href="./index.html">
+                <div class="logo_name">Evm One</div>
+            </a>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <a href="./company.html">
+                    <i class='bx bxs-buildings'></i>
+                    <span class="links_name">Company</span>
+                </a>
+                <span class="tooltip">Company</span>
+            </li>
+            <li>
+                <a href="./lead.html">
+                    <i class='bx bxs-group'></i>
+                    <span class="links_name">Lead</span>
+                </a>
+                <span class="tooltip">Lead</span>
+            </li>
+            <li>
+                <a href="./inventory.html">
+                    <i class='bx bxs-file'></i>
+                    <span class="links_name">Inventory</span>
+                </a>
+                <span class="tooltip">Inventory</span>
+            </li>
+            <li>
+                <a href="./payment.html">
+                    <i class='bx bxs-dollar-circle'></i>
+                    <span class="links_name">Payment</span>
+                </a>
+                <span class="tooltip">Payment</span>
+            </li>
+            <li>
+                <a href="./loan.html">
+                    <i class='bx bxs-bank'></i>
+                    <span class="links_name">Loan</span>
+                </a>
+                <span class="tooltip">Loan</span>
+            </li>
+            <li>
+                <a href="./discount.html">
+                    <i class='bx bxs-discount'></i>
+                    <span class="links_name">Discount</span>
+                </a>
+                <span class="tooltip">Discount</span>
+            </li>
+            <li>
+                <a href="./obflevel1.html">
+                    <i class='bx bxs-note'></i>
+                    <span class="links_name">OBF Level-1</span>
+                </a>
+                <span class="tooltip">OBF Level-1</span>
+            </li>
+            <li>
+                <a href="./obflevel2.html">
+                    <i class='bx bxs-note'></i>
+                    <span class="links_name">OBF Level-2</span>
+                </a>
+                <span class="tooltip">OBF Level-2</span>
+            </li>
+            <li>
+                <a href="./retailsales.html">
+                    <i class='bx bxs-buildings'></i>
+                    <span class="links_name">Retail Sales</span>
+                </a>
+                <span class="tooltip">Retail Sales</span>
+            </li>
+            <li>
+                <a href="./registration.html">
+                    <i class='bx bxs-buildings'></i>
+                    <span class="links_name">Registration Confirm</span>
+                </a>
+                <span class="tooltip">Registration Confirm</span>
+            </li>
+            <li>
+                <a href="./documentupload.html">
+                    <i class='bx bxs-report'></i>
+                    <span class="links_name">Document Upload</span>
+                </a>
+                <span class="tooltip">Document Upload</span>
+            </li>
+            <li>
+                <a href="./documentapproval.html">
+                    <i class='bx bxs-report'></i>
+                    <span class="links_name">Document Approval</span>
+                </a>
+                <span class="tooltip">Document Approval</span>
+            </li>
+            <li>
+                <a href="./allocation.html">
+                    <i class='bx bxs-report'></i>
+                    <span class="links_name">Allocation</span>
+                </a>
+                <span class="tooltip">Allocation</span>
+            </li>
+            <li>
+                <a href="./settlement.html">
+                    <i class='bx bxs-report'></i>
+                    <span class="links_name">Settlement of Accounts</span>
+                </a>
+                <span class="tooltip">Settlement</span>
+            </li>
+            <li>
+                <a href="./cancellation.html">
+                    <i class='bx bxs-error'></i>
+                    <span class="links_name">Cancellation</span>
+                </a>
+                <span class="tooltip">Cancellation</span>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <div class="navigation">
+            <div class="nav-1">
+                <div class="search">
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <p id="openModal">Search</p>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <input type="text"
+                            style="border: 1px solid #d7dbe6; padding: 5px; outline: none; font-size: 14px;"
+                            placeholder="Search...">
+                    </div>
+
+                </div>
+            </div>
+            <div class="profile">
+                <i class='bx bx-bell'></i>
+                <img src="./images/portrait-white-man-isolated.jpg" alt="">
+            </div>
+        </div>
+        <div class="addsection">
+            <div class="subhead">
+                <h1>Add Lead</h1>
+                <form action="#">
+                    <div class="fields">
+                        <div class="profile">
+                            <div class="circle-container" onclick="document.getElementById('fileInput').click()">
+                                <img class="circle-image"
+                                    src="https://guelph.bigbrothersbigsisters.ca/wp-content/uploads/sites/185/2022/04/Neutral-placeholder-profile.jpg"
+                                    alt="Placeholder Image">
+                                <input type="file" id="fileInput" accept="image/*" style="display:none">
+                                <span class="upload-text">Change Image</span>
+                            </div>
+                        </div>
+                        <div class="input-field">
+                            <label>Full Name</label><br>
+                            <input type="text" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Phone Number</label><br>
+                            <input type="tel" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Email</label><br>
+                            <input type="email" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Permanent Address</label><br>
+                            <textarea cols="30" rows="5" required></textarea>
+                        </div>
+                        <div class="input-field">
+                            <label>Shipping Address</label><br>
+                            <textarea cols="30" rows="5" required></textarea>
+                        </div>
+                        <div class="input-field">
+                            <label>Source</label><br>
+                            <input type="text" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Lead Status</label><br>
+                            <input type="text" required>
+                        </div>
+                        <div class="input-field">
+                            <div class="file-input-wrapper">
+                                <label for="fileInput1">Proof of Addreess</label>
+                                <input type="file" id="fileInput1" class="fileInput" accept=".pdf"
+                                    onchange="previewFile(this, 'preview1')">
+                                <div id="preview1" class="pdf-preview"></div>
+                            </div>
+                        </div>
+                        <div class="input-field">
+                            <div class="file-input-wrapper">
+                                <label for="fileInput2">Upload PAN Card</label>
+                                <input type="file" id="fileInput2" class="fileInput" accept=".pdf"
+                                    onchange="previewFile(this, 'preview2')">
+                                <div id="preview2" class="pdf-preview"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="saveBtn">
+                        <button>
+                            Save
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
